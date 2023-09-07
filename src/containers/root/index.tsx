@@ -3,9 +3,11 @@ import { Header, Sidebar } from 'components';
 
 function Root() {
   return (
-    <div className='App'>
+    <div className='app'>
       <Header />
-      <Sidebar />
+      <div className='content'>
+        <Sidebar />
+      </div>
     </div>
   );
 }

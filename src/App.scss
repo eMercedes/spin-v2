@@ -1,6 +1,11 @@
 @use 'styles/colors.scss';
 @import 'custom';
 
-.App {
+.app {
   min-height: 100vh;
+
+  .content {
+    display: flex;
+    background-color: #212121;
+  }
 }
