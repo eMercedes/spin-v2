@@ -2,8 +2,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import Root from './containers/root';
-import Dashboard from './containers/dashboard';
+import Root from 'containers/root';
+import Dashboard from 'containers/dashboard';
 import configureStore from './store';
 import './App.scss';
 
