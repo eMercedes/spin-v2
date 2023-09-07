@@ -1,12 +1,9 @@
-import axios from 'axios'
+import axios from 'axios';
 
 interface appResponse {
-    data: Object
+  data: Object;
 }
 
-export async function login(
-    email: string,
-    password: string
-): Promise<appResponse> {
-    return await axios.get(`https://api.lyrics.ovh/v1/${email}/${password}`)
+export async function login(email: string, password: string): Promise<appResponse> {
+  return await axios.get(`https://api.lyrics.ovh/v1/${email}/${password}`);
 }
