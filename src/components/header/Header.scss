@@ -11,4 +11,16 @@
   .logo {
     height: 20px;
   }
+  .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    &:hover {
+      background-color: $hover;
+      color: $text-active;
+      cursor: pointer;
+    }
+  }
 }

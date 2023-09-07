@@ -3,7 +3,7 @@
 .sidebar {
   background-color: $background;
   border-color: $border;
-  color: $text;
+  color: $text-normal;
   font-size: 14px;
   font-weight: 600;
   height: calc(100vh - 60px);
@@ -13,7 +13,8 @@
     .ps-menu-button {
       &.ps-open,
       &:hover {
-        background-color: #232323;
+        background-color: $hover;
+        color: $text-active;
       }
     }
     .ps-submenu-content {
