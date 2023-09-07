@@ -5,7 +5,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Root from './containers/root';
 import Dashboard from './containers/dashboard';
 import configureStore from './store';
-import './App.css';
+import './App.scss';
 
 const { store, persistor } = configureStore();
 
