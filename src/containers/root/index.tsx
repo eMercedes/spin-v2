@@ -1,16 +1,31 @@
 import React from 'react';
+import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { Link } from 'react-router-dom';
+import { Header } from 'components';
 
 function Root() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <p>
-          Root <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Sidebar>
+        <Menu
+          menuItemStyles={{
+            button: {
+              // the active class will be added automatically by react router
+              // so we can use it to style the active menu item
+              [`&.active`]: {
+                backgroundColor: '#13395e',
+                color: '#b6c8d9',
+              },
+            },
+          }}
+        >
+          <MenuItem component={<Link to='/documentation' />}> Documentation</MenuItem>
+          <MenuItem component={<Link to='/calendar' />}> Calendar</MenuItem>
+          <MenuItem component={<Link to='/e-commerce' />}> E-commerce</MenuItem>
+        </Menu>
+      </Sidebar>
+      ;
     </div>
   );
 }
