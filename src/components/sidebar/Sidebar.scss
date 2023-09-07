@@ -1,24 +1,24 @@
 @use 'styles/colors.scss' as *;
 
 .sidebar {
-  background-color: $background;
-  border-color: $border;
-  color: $text-normal;
-  font-size: 14px;
-  font-weight: 600;
-  height: calc(100vh - 60px);
-  .ps-sidebar-container {
-    background-color: unset;
+    background-color: $background;
+    border-color: $border !important;
+    color: $text-normal;
+    font-size: 14px;
+    font-weight: 600;
+    height: calc(100vh - 60px);
+    .ps-sidebar-container {
+        background-color: unset;
 
-    .ps-menu-button {
-      &.ps-open,
-      &:hover {
-        background-color: $hover;
-        color: $text-active;
-      }
+        .ps-menu-button {
+            &.ps-open,
+            &:hover {
+                background-color: $hover;
+                color: $text-active;
+            }
+        }
+        .ps-submenu-content {
+            background-color: unset;
+        }
     }
-    .ps-submenu-content {
-      background-color: unset;
-    }
-  }
 }
