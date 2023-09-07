@@ -1,6 +1,13 @@
 @use 'styles/colors.scss' as *;
 
 .header {
+  display: flex;
+  align-items: center;
   background-color: $background;
+  padding: 0 20px;
   height: 60px;
+
+  .logo {
+    height: 20px;
+  }
 }
