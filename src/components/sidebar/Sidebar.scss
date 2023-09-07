@@ -1,3 +1,22 @@
+@use 'styles/colors.scss' as *;
+
 .sidebar {
+  background-color: $background;
+  color: $text;
+  font-size: 14px;
+  font-weight: 600;
   height: calc(100vh - 60px);
+  .ps-sidebar-container {
+    background-color: unset;
+
+    .ps-menu-button {
+      &.ps-open,
+      &:hover {
+        background-color: #232323;
+      }
+    }
+    .ps-submenu-content {
+      background-color: unset;
+    }
+  }
 }
