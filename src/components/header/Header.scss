@@ -1,26 +1,48 @@
 @use 'styles/colors.scss' as *;
 
 .header {
-  display: flex;
-  align-items: center;
-  background-color: $background;
-  border-bottom: 1px solid $border;
-  padding: 0 20px;
-  height: 60px;
-
-  .logo {
-    height: 20px;
-  }
-  .toggle {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 60px;
+    background-color: $background;
+    border-bottom: 1px solid $border;
+    color: #444;
+    padding: 0 20px;
     height: 60px;
-    &:hover {
-      background-color: $hover;
-      color: $text-active;
-      cursor: pointer;
+
+    .logo {
+        height: 20px;
     }
-  }
+    .toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        &:hover {
+            background-color: $hover;
+            color: $text-active;
+            cursor: pointer;
+        }
+    }
+    .user {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        button {
+            display: flex;
+            align-items: center;
+            border: unset;
+            color: #444;
+            margin-right: 20px;
+
+            img {
+                width: 26px;
+                height: 26px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
 }

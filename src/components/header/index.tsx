@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { Image } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Profile from './Profile'
 import logo from 'assets/images/logo-primary-white@2X.png'
 import * as actions from 'interfaces/redux'
 import './Header.scss'
@@ -17,6 +18,10 @@ const Header = () => {
         <div className='header'>
             <Image className='logo' src={logo} />
             <div className='toggle' onClick={() => handleToggle()}>
+                <FontAwesomeIcon icon={faBars} />
+            </div>
+            <div className='user'>
+                <Profile />
                 <FontAwesomeIcon icon={faBars} />
             </div>
         </div>
