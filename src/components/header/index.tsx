@@ -10,7 +10,6 @@ import './Header.scss'
 const Header = () => {
     const dispatch = useDispatch()
     const handleToggle = () => {
-        console.log('test')
         dispatch({ type: actions.TOGGLE_REQUEST, target: 'left' })
     }
 
