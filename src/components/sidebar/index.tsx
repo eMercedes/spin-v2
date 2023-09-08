@@ -17,6 +17,9 @@ const SpinSide = () => {
                     <MenuItem> Pie charts</MenuItem>
                     <MenuItem> Line charts</MenuItem>
                     <MenuItem> Bar charts</MenuItem>
+                    <MenuItem> Pie charts</MenuItem>
+                    <MenuItem> Line charts</MenuItem>
+                    <MenuItem> Bar charts</MenuItem>
                 </SubMenu>
                 <SubMenu icon={<FontAwesomeIcon icon={faPenNib} />} label='Maps'>
                     <MenuItem> Google maps</MenuItem>
