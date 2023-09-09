@@ -4,6 +4,8 @@ import { Image } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Profile from './Profile'
+import Messages from './Messages'
+import Notifications from './Notifications'
 import logo from 'assets/images/logo-primary-white@2X.png'
 import * as actions from 'interfaces/redux'
 import './Header.scss'
@@ -21,8 +23,10 @@ const Header = () => {
                 <FontAwesomeIcon icon={faBars} />
             </div>
             <div className='user'>
+                <Notifications />
+                <Messages />
                 <Profile />
-                <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon className='ms-3' icon={faBars} />
             </div>
         </div>
     )
