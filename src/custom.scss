@@ -1,8 +1,12 @@
 /* make the customizations */
 $theme-colors: (
-  'info': tomato,
-  'danger': teal,
+    'info': tomato,
+    'danger': teal,
 );
+$body-bg: #1a1a1a;
+$body-color: #383838;
+$dropdown-link-hover-bg: #232323;
+$dropdown-link-active-bg: #232323;
 
 /* import bootstrap to set changes */
 @import '~bootstrap/scss/bootstrap';
