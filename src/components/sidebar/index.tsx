@@ -1,9 +1,10 @@
 import { useSelector } from 'react-redux'
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenNib } from '@fortawesome/free-solid-svg-icons'
+import { faColumns } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faTh } from '@fortawesome/free-solid-svg-icons'
 import { AppState } from 'reducers'
 import './Sidebar.scss'
 
@@ -13,21 +14,21 @@ const SpinSide = () => {
     return (
         <Sidebar className='sidebar' collapsed={collapsed}>
             <Menu>
-                <SubMenu icon={<FontAwesomeIcon icon={faPenNib} />} label='Charts'>
-                    <MenuItem> Pie charts</MenuItem>
-                    <MenuItem> Line charts</MenuItem>
-                    <MenuItem> Bar charts</MenuItem>
-                    <MenuItem> Pie charts</MenuItem>
-                    <MenuItem> Line charts</MenuItem>
-                    <MenuItem> Bar charts</MenuItem>
+                <SubMenu icon={<FontAwesomeIcon icon={faHome} />} label='Start'>
+                    <MenuItem>Financial</MenuItem>
+                    <MenuItem>Projects</MenuItem>
+                    <MenuItem>Motor</MenuItem>
+                    <MenuItem>System</MenuItem>
+                    <MenuItem>Activity Team</MenuItem>
+                    <MenuItem>E-Commerce</MenuItem>
                 </SubMenu>
-                <SubMenu icon={<FontAwesomeIcon icon={faPenNib} />} label='Maps'>
-                    <MenuItem> Google maps</MenuItem>
-                    <MenuItem> Open street maps</MenuItem>
+                <SubMenu icon={<FontAwesomeIcon icon={faTh} />} label='Widgets'>
+                    <MenuItem>Data Widgets</MenuItem>
+                    <MenuItem>Graph Widget</MenuItem>
                 </SubMenu>
-                <SubMenu suffix='🔥' icon={<FontAwesomeIcon icon={faEnvelope} />} label='Theme'>
-                    <MenuItem> Dark</MenuItem>
-                    <MenuItem> Light</MenuItem>
+                <SubMenu suffix='🔥' icon={<FontAwesomeIcon icon={faColumns} />} label='Layout'>
+                    <MenuItem>Default Page</MenuItem>
+                    <MenuItem>Default Fixed</MenuItem>
                 </SubMenu>
             </Menu>
         </Sidebar>
