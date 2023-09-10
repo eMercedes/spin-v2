@@ -19,6 +19,11 @@
         }
         .ps-submenu-content {
             background-color: $background;
+
+            a {
+                color: unset;
+                text-decoration: none;
+            }
         }
     }
 }

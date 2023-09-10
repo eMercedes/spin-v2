@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faColumns } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { faTh } from '@fortawesome/free-solid-svg-icons'
 import { AppState } from 'reducers'
@@ -15,7 +15,7 @@ const SpinSide = () => {
         <Sidebar className='sidebar' collapsed={collapsed}>
             <Menu>
                 <SubMenu icon={<FontAwesomeIcon icon={faHome} />} label='Start'>
-                    <MenuItem>Financial</MenuItem>
+                    <MenuItem component={<Link to='/start/financial' />}>Financial</MenuItem>
                     <MenuItem>Projects</MenuItem>
                     <MenuItem>Motor</MenuItem>
                     <MenuItem>System</MenuItem>
