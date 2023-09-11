@@ -2,12 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import configureStore from './store'
 import './index.css'
 
 const { store, persistor } = configureStore()
+
+ChartJS.register(ArcElement, Tooltip, Legend)
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(

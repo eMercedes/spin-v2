@@ -6,7 +6,7 @@
     color: $text-normal;
     font-size: 14px;
     font-weight: 600;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     .ps-sidebar-container {
         background-color: unset;
 

@@ -5,4 +5,8 @@
     .status {
         display: flex;
     }
+
+    .pie-chart {
+        max-width: calc(100% - 20px);
+    }
 }
