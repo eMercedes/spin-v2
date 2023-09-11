@@ -11,6 +11,7 @@
         background-color: unset;
 
         .ps-menu-button {
+            &.ps-active,
             &.ps-open,
             &:hover {
                 background-color: $hover;
