@@ -26,8 +26,8 @@ const Breadcrumbs = () => {
             <Breadcrumb.Item className='ms-5'>
                 <FontAwesomeIcon icon={ICONS[locations[2]]} />
             </Breadcrumb.Item>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item href='https://getbootstrap.com/docs/4.0/components/breadcrumb/'>Library</Breadcrumb.Item>
+            <Breadcrumb.Item>{locations[1]}</Breadcrumb.Item>
+            <Breadcrumb.Item>{locations[2]}</Breadcrumb.Item>
         </Breadcrumb>
     )
 }
