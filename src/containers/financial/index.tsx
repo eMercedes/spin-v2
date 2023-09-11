@@ -1,5 +1,5 @@
 import { Pie } from 'react-chartjs-2'
-import Cashcard from 'components/cashcard'
+import Cash from 'components/cards/cash'
 import './Financial.scss'
 
 function Financial() {
@@ -32,10 +32,10 @@ function Financial() {
     return (
         <div className='financial'>
             <div className='status'>
-                <Cashcard title='Main Fundings' total={694} change={30} />
-                <Cashcard className='ms-3' title='Invoices' total={254} change={828} status='down' />
-                <Cashcard className='ms-3' title='Accounts Receivable' total={346} change={663} />
-                <Cashcard className='ms-3' title='Secure Holdings' total={7} status='zero' />
+                <Cash title='Main Fundings' total={694} change={30} />
+                <Cash className='ms-3' title='Invoices' total={254} change={828} status='down' />
+                <Cash className='ms-3' title='Accounts Receivable' total={346} change={663} />
+                <Cash className='ms-3' title='Secure Holdings' total={7} status='zero' />
             </div>
             <div>
                 <Pie className='pie-chart' data={data} />

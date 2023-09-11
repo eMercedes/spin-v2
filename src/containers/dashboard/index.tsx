@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
-import { Header, Sidebar } from 'components'
+import Header from 'components/header'
+import Sidebar from 'components/sidebar'
 
 function Root() {
     return (

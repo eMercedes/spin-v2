@@ -1,7 +1,7 @@
 import css from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
-import './Cashcard.scss'
+import './Cash.scss'
 
 interface CashcardPropTypes {
     className?: string
