@@ -19,8 +19,16 @@
         height: 60px;
     }
     .change {
+        display: flex;
+        align-items: flex-end;
         color: $text-grey;
         font-size: $font-xxs;
         padding: 0 0 20px 20px;
+        .up {
+            color: green;
+        }
+        .down {
+            color: red;
+        }
     }
 }

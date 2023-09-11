@@ -1,17 +1,23 @@
 import React from 'react'
+import css from 'classnames'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import './Cashcard.scss'
 
 interface CashcardPropTypes {
     title: string
     total: number
     change: number
+    status?: 'up' | 'down' | 'zero'
 }
 
-const CashCard = ({ title, total, change }: CashcardPropTypes) => (
+const CashCard = ({ title, total, change, status = 'up' }: CashcardPropTypes) => (
     <div className='cash-card'>
         <div className='title'>{title}</div>
         <div className='amount'>$ {total}</div>
-        <div className='change'>${change}</div>
+        <div className='change'>
+            <FontAwesomeIcon className={css(status, 'me-2')} icon={faCaretUp} />$ {change}
+        </div>
     </div>
 )
 
