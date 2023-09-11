@@ -1,0 +1,17 @@
+@use 'styles/sizes.scss' as *;
+@use 'styles/colors.scss' as *;
+
+.breadcrumbs {
+    text-transform: capitalize;
+    align-items: flex-end;
+
+    .head {
+        color: $text-active;
+        font-size: $font-xl;
+        line-height: $font-xl;
+    }
+
+    a {
+        text-decoration: unset;
+    }
+}

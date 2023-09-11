@@ -1,6 +1,5 @@
-import React from 'react'
 import { useDispatch } from 'react-redux'
-import { Image } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Profile from './Profile'
