@@ -1,16 +1,13 @@
 import React from 'react'
+import Cashcard from 'components/cashcard'
+import './Financial.scss'
 
 function Financial() {
     return (
-        <div className='App'>
-            <header className='App-header'>
-                <p>
-                    Dashboard <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-                    Learn React
-                </a>
-            </header>
+        <div className='financial'>
+            <div className='status'>
+                <Cashcard title='Main Fundings' total={694} change={30} />
+            </div>
         </div>
     )
 }
