@@ -37,7 +37,7 @@ function Financial() {
                 <Cash className='ms-3' title='Accounts Receivable' total={346} change={663} />
                 <Cash className='ms-3' title='Secure Holdings' total={7} status='zero' />
             </div>
-            <div>
+            <div className='pt-5'>
                 <Pie className='pie-chart' data={data} />
             </div>
         </div>
