@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux'
+import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -18,14 +19,16 @@ const Header = () => {
     return (
         <div className='header'>
             <Image className='logo' src={logo} />
-            <div className='toggle' onClick={() => handleToggle()}>
+            <Button variant='dark' onClick={() => handleToggle()}>
                 <FontAwesomeIcon icon={faBars} />
-            </div>
+            </Button>
             <div className='user'>
                 <Notifications />
                 <Messages />
                 <Profile />
-                <FontAwesomeIcon className='ms-3' icon={faBars} />
+                <Button variant='dark'>
+                    <FontAwesomeIcon icon={faBars} />
+                </Button>
             </div>
         </div>
     )

@@ -12,18 +12,15 @@
     .logo {
         height: 20px;
     }
-    .toggle {
+
+    .btn-dark {
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        &:hover {
-            background-color: $hover;
-            color: $text-active;
-            cursor: pointer;
-        }
+        border-radius: unset;
+        height: 59px;
+        color: #444;
     }
+
     .user {
         display: flex;
         align-items: center;
@@ -35,11 +32,6 @@
         }
 
         button {
-            display: flex;
-            align-items: center;
-            border-radius: unset;
-            color: #444;
-
             img {
                 width: 26px;
                 height: 26px;
