@@ -13,7 +13,7 @@ const Notifications = () => {
             title={
                 <>
                     <FontAwesomeIcon icon={faBell} />
-                    <span className='badge badge-pill badge-success'>9</span>
+                    <span className='badge badge-pill badge-success notify'>9</span>
                 </>
             }
         >

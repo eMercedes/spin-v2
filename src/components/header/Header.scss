@@ -39,6 +39,19 @@
                 width: 26px;
                 height: 26px;
             }
+            .badge {
+                line-height: 8px;
+                margin-left: -5px;
+                margin-top: -10px;
+                border-radius: 20px;
+
+                &.notify {
+                    background-color: #2c97de;
+                }
+                &.message {
+                    background-color: #2dbda8;
+                }
+            }
             &::after {
                 display: none;
             }

@@ -13,7 +13,7 @@ const Messages = () => {
             title={
                 <>
                     <FontAwesomeIcon icon={faEnvelope} />
-                    <span className='badge badge-pill badge-success'>4</span>
+                    <span className='badge badge-pill badge-success message'>4</span>
                 </>
             }
         >
