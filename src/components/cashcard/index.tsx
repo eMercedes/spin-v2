@@ -14,11 +14,11 @@ interface CashcardPropTypes {
 const CashCard = ({ className, title, total, change = 0, status = 'up' }: CashcardPropTypes) => (
     <div className={css('cash-card', className)}>
         <div className='title'>{title}</div>
-        <div className='amount'>$ {total}</div>
+        <div className='amount'>$ {(Math.round(total * 100) / 100).toFixed(2)}</div>
         <div className='change'>
             {change ? (
                 <>
-                    <FontAwesomeIcon className={css(status, 'me-2')} icon={faCaretUp} />$ {change}
+                    <FontAwesomeIcon className={css(status, 'me-2')} icon={faCaretUp} />$ {(Math.round(change * 100) / 100).toFixed(2)}
                 </>
             ) : (
                 'No Change'
