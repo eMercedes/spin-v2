@@ -2,6 +2,14 @@
 
 ![alt text](https://github.com/hirokimoto/spin-v2/blob/main/src/assets/samples/dashboard.png?raw=true)
 
+\### Project status
+
+-   [x] Redux
+-   [x] Redux Saga
+-   [x] Redux Persist
+-   [x] Bootstrap
+-   [ ] Unit test
+
 ## Available Scripts
 
 In the project directory, you can run:
