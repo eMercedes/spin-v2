@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import { Header, Sidebar } from 'components'
 
 function Root() {
@@ -6,6 +7,7 @@ function Root() {
             <Header />
             <div className='content'>
                 <Sidebar />
+                <Outlet />
             </div>
         </div>
     )
