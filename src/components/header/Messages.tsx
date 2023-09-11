@@ -1,6 +1,7 @@
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownButton from 'react-bootstrap/DropdownButton'
+import Badge from 'react-bootstrap/Badge'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,10 +11,13 @@ const Messages = () => {
             as={ButtonGroup}
             key='messages'
             id='dropdown-messages'
+            variant='dark'
             title={
                 <>
                     <FontAwesomeIcon icon={faEnvelope} />
-                    <span className='badge badge-pill badge-success message'>4</span>
+                    <Badge pill bg='info'>
+                        4
+                    </Badge>
                 </>
             }
         >

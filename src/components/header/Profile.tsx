@@ -11,6 +11,7 @@ const Profile = () => {
             as={ButtonGroup}
             key='profile'
             id='dropdown-profile'
+            variant='dark'
             title={
                 <>
                     <span className='me-2'>Hiroki Moto</span>

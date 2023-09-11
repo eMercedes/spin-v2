@@ -1,6 +1,7 @@
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownButton from 'react-bootstrap/DropdownButton'
+import Badge from 'react-bootstrap/Badge'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,10 +11,13 @@ const Notifications = () => {
             as={ButtonGroup}
             key='notifications'
             id='dropdown-notifications'
+            variant='dark'
             title={
                 <>
                     <FontAwesomeIcon icon={faBell} />
-                    <span className='badge badge-pill badge-success notify'>9</span>
+                    <Badge pill bg='primary'>
+                        9
+                    </Badge>
                 </>
             }
         >
