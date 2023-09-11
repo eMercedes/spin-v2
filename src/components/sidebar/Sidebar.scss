@@ -1,7 +1,7 @@
 @use 'styles/colors.scss' as *;
 
 .sidebar {
-    background-color: $background;
+    background-color: $secondary;
     border-color: $border !important;
     color: $text-normal;
     font-size: 14px;
@@ -25,7 +25,7 @@
             }
         }
         .ps-submenu-content {
-            background-color: $background;
+            background-color: $secondary;
 
             a {
                 color: unset;

@@ -26,10 +26,10 @@
         font-size: $font-xxs;
         padding: 0 0 10px 10px;
         .up {
-            color: green;
+            color: $success;
         }
         .down {
-            color: red;
+            color: $danger;
         }
     }
 }
