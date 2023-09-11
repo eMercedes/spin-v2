@@ -1,19 +1,31 @@
+$primary: #2d99dc;
+$secondary: #1a1a1a;
+$success: #86b34d;
+$warning: #e66c40;
+$danger: #cb3e4b;
+$info: #35bda8;
+$light: #444;
+$dark: #1a1a1a;
+$link: #5c5c5c;
+
 /* make the customizations */
 $theme-colors: (
-    'primary': #2d99dc,
-    'secondary': #1a1a1a,
-    'success': #86b34d,
-    'warning': #e66c40,
-    'danger': #cb3e4b,
-    'info': #35bda8,
-    'light': #444,
-    'dark': #1a1a1a,
-    'link': #5c5c5c,
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'warning': $warning,
+    'danger': $danger,
+    'info': $info,
+    'light': $light,
+    'dark': $dark,
+    'link': $link,
 );
-$body-bg: #1a1a1a;
+$body-bg: $secondary;
 $body-color: #383838;
 $dropdown-link-hover-bg: #232323;
 $dropdown-link-active-bg: #232323;
+
+$link-color: $primary;
 
 /* import bootstrap to set changes */
 @import '~bootstrap/scss/bootstrap';
