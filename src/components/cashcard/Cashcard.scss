@@ -2,6 +2,7 @@
 @use 'styles/sizes.scss' as *;
 
 .cash-card {
+    flex: 1;
     background-color: $text-normal;
     border-radius: $border-radius-sm;
     color: $text-active;

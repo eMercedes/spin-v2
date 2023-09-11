@@ -7,16 +7,22 @@ import './Cashcard.scss'
 interface CashcardPropTypes {
     title: string
     total: number
-    change: number
+    change?: number
     status?: 'up' | 'down' | 'zero'
 }
 
-const CashCard = ({ title, total, change, status = 'up' }: CashcardPropTypes) => (
+const CashCard = ({ title, total, change = 0, status = 'up' }: CashcardPropTypes) => (
     <div className='cash-card'>
         <div className='title'>{title}</div>
         <div className='amount'>$ {total}</div>
         <div className='change'>
-            <FontAwesomeIcon className={css(status, 'me-2')} icon={faCaretUp} />$ {change}
+            {change ? (
+                <>
+                    <FontAwesomeIcon className={css(status, 'me-2')} icon={faCaretUp} />$ {change}
+                </>
+            ) : (
+                'No Change'
+            )}
         </div>
     </div>
 )
