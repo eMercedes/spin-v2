@@ -8,6 +8,8 @@
 -   [x] Redux Saga
 -   [x] Redux Persist
 -   [x] Bootstrap
+-   [x] Git Hooks
+-   [x] Prettier
 -   [ ] Unit test
 
 ## Available Scripts
