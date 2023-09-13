@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 import Header from 'components/header'
 import Sidebar from 'components/sidebar'
 
-function Root() {
+function Dashboard() {
     return (
         <div className='app'>
             <Header />
@@ -14,4 +14,4 @@ function Root() {
     )
 }
 
-export default Root
+export default Dashboard

@@ -1,12 +1,14 @@
 import * as actions from 'interfaces/redux'
 
 export interface AppState {
+    token: string
     toggleOfSidebar: boolean
     email: string
     data: Object
 }
 
 const initialState: AppState = {
+    token: '',
     toggleOfSidebar: true,
     email: '',
     data: {},
