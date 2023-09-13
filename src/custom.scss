@@ -27,5 +27,18 @@ $dropdown-link-active-bg: #232323;
 
 $link-color: $primary;
 
+$btn-color: #ffffff;
+
 /* import bootstrap to set changes */
 @import '~bootstrap/scss/bootstrap';
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @if $color == 'light' {
+            color: #000000;
+        } @else {
+            color: $btn-color;
+        }
+    }
+}
